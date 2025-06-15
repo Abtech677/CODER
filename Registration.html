@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Registration Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to an external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>W/Ro Sheen PTC</h1>
+    <h2>Name: Mubarek Mohammed Level 4</h2>
+
+    <form action="/submit-registration" method="POST">
+        <h3>School Registration Form</h3>
+        
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" name="student_name" required>
+        <label for="Last_name">Last Name:</label>
+        <input type="text" id="Last-name" name="student_name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        Gender: 
+            <input type="radio" name="gender" value="male"> male
+            <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label for="class">Department:</label>
+        <select id="class" name="class" required>
+            <option value="">Select field</option>
+            <option value="1">ICT</option>
+            <option value="2">auto</option>
+            <option value="3">Electric</option>
+            <option value="4">garment</option>
+            <option value="5">electronics</option>
+        </select>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <input type="submit" value="Submit Registration">
+    </form>
+
+</body>
+</html>
